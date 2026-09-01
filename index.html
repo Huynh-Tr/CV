@@ -60,7 +60,7 @@
 
   /* ── Reset ─────────────────────────────────────────────────────────── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 17px; scroll-behavior: smooth; }
+  html { font-size: 15px; scroll-behavior: smooth; }
   body {
     background: var(--bg);
     color: var(--fg);
@@ -73,8 +73,8 @@
   /* ── Print ─────────────────────────────────────────────────────────── */
   @media print {
     @page { size: A4 portrait; margin: 12mm 14mm; }
-    body { background: #fff; color: #111; font-size: 13px; }
-    html { font-size: 13px; }
+    body { background: #fff; color: #111; font-size: 11.5px; }
+    html { font-size: 11.5px; }
     .page { max-width: none; padding: 0; }
     .rail { border-right: 1px solid #ccc; }
     .tag { border: 1px solid #ccc; background: #f0f0f0; color: #333; }
@@ -87,12 +87,12 @@
   .page {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 28px 20px;
+    padding: 0 22px 12px;
   }
 
   /* ── Header ────────────────────────────────────────────────────────── */
   .header {
-    padding: 18px 0 14px;
+    padding: 12px 0 10px;
     border-bottom: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
@@ -143,8 +143,8 @@
   .body-grid {
     display: grid;
     grid-template-columns: 230px 1fr;
-    gap: 0 52px;
-    margin-top: 14px;
+    gap: 0 36px;
+    margin-top: 10px;
   }
   @media (max-width: 660px) {
     .body-grid { grid-template-columns: 1fr; }
@@ -156,23 +156,23 @@
   /* ── Rail ──────────────────────────────────────────────────────────── */
   .rail {
     border-right: 1px solid var(--border);
-    padding-right: 44px;
+    padding-right: 32px;
   }
-  .rail-section { margin-bottom: 14px; }
+  .rail-section { margin-bottom: 10px; }
   .rail-label {
     font-size: 9.5px;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--meta);
-    margin-bottom: 8px;
-    padding-bottom: 5px;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
     border-bottom: 1px solid var(--border-soft);
   }
 
   /* ── Education ─────────────────────────────────────────────────────── */
   .edu-item {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     padding-left: 11px;
     border-left: 2px solid var(--edu-color);
   }
@@ -190,7 +190,7 @@
     font-size: 13px;
     font-weight: 600;
     color: var(--fg-2);
-    margin-top: 3px;
+    margin-top: 2px;
   }
   .edu-field {
     font-size: 12px;
@@ -202,7 +202,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--date-color);
-    margin-top: 4px;
+    margin-top: 3px;
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.02em;
   }
@@ -213,7 +213,7 @@
     display: inline-block;
     font-size: 12.5px;
     font-weight: 600;
-    padding: 3px 10px;
+    padding: 2px 8px;
     border-radius: 5px;
     background: var(--surface-warm);
     color: var(--fg-2);
@@ -234,8 +234,8 @@
     font-size: 20px;
     font-weight: 500;
     color: var(--fg);
-    margin-bottom: 14px;
-    padding-bottom: 7px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
     border-bottom: 1px solid var(--border);
     letter-spacing: -0.01em;
   }
@@ -245,7 +245,7 @@
   .exp-item {
     position: relative;
     padding-left: 22px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
   }
   .exp-item:last-child { padding-bottom: 0; }
 
@@ -273,7 +273,7 @@
     justify-content: space-between;
     align-items: baseline;
     gap: 12px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     flex-wrap: wrap;
   }
   .exp-role {
@@ -308,14 +308,14 @@
   .exp-location {
     font-size: 11.5px;
     color: var(--meta);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .exp-bullets {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
   }
   .exp-bullets li {
     font-size: 13.5px;
@@ -339,11 +339,11 @@
   .header-left {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
   }
   .avatar {
-    width: 80px;
-    height: 80px;
+    width: 68px;
+    height: 68px;
     border-radius: 50%;
     border: 2px solid var(--border);
     background: var(--surface-warm);
