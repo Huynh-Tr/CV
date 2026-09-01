@@ -92,10 +92,10 @@
 
   /* ── Header ────────────────────────────────────────────────────────── */
   .header {
-    padding: 14px 0 14px;
+    padding: 8px 0 8px;
     border-bottom: 1px solid var(--border);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
@@ -121,11 +121,11 @@
   }
   .tagline .sep { color: var(--border); margin: 0 8px; }
 
-  .header-contact {
+  .contact-inline {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    margin-top: 5px;
   }
   .contact-item {
     display: flex;
@@ -144,13 +144,13 @@
     display: grid;
     grid-template-columns: 210px 1fr;
     gap: 0 24px;
-    margin-top: 10px;
+    margin-top: 6px;
   }
   @media (max-width: 660px) {
     .body-grid { grid-template-columns: 1fr; }
     .rail { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 28px; }
     .header { flex-direction: column; align-items: flex-start; }
-    .header-contact { align-items: flex-start; }
+    .contact-inline { align-items: flex-start; }
   }
 
   /* ── Rail ──────────────────────────────────────────────────────────── */
@@ -399,21 +399,21 @@
           <span class="sep">|</span>
           <span>Financial Analyst</span>
         </p>
+        <div class="contact-inline">
+          <a class="contact-item" href="mailto:truonghuynh210692@gmail.com">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            truonghuynh210692@gmail.com
+          </a>
+          <div class="contact-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Buon Ma Thuot, Dak Lak, Vietnam
+          </div>
+          <a class="contact-item" href="https://www.linkedin.com/in/huynh-truong-6b8b6b110" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/huynh-truong
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="header-contact">
-      <a class="contact-item" href="mailto:truonghuynh210692@gmail.com">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        truonghuynh210692@gmail.com
-      </a>
-      <div class="contact-item">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        Buon Ma Thuot, Dak Lak, Vietnam
-      </div>
-      <a class="contact-item" href="https://www.linkedin.com/in/huynh-truong-6b8b6b110" target="_blank" rel="noopener">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        linkedin.com/in/huynh-truong
-      </a>
     </div>
   </header>
 
